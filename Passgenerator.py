@@ -1,11 +1,11 @@
 import string
 import random
 
-longitud = int(input("ingrese el tamaño de la contraseña: "))
+length = int(input("Enter the password length: "))
 
-caracteres = string.ascii_letters + string.digits + string.punctuation
+characters = string.ascii_letters + string.digits + string.punctuation
 
-contrasena = "".join(random.choice(caracteres) for i in range(longitud))
+password = "".join(random.choice(characters) for i in range(length))
 
-print("La contraseña generada es: " + contrasena)
-print("Gracias por utilizar this password generator")
+print("Your password is: " + password)
+print("Thanks for using Password-generator")
